@@ -1,0 +1,110 @@
+body {
+    font-family: "Copperplate Gothic";
+    background-color: #cdcdcd;
+    background-image: url("./Background/backgroundTM.png");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+    &.button {
+        font-family: "Copperplate Gothic";  
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        &.primary {
+            border-radius: 12px;
+            padding: 0.25em 2em;
+            background-color: #8c6239;
+            color: #ffba1a;
+            &:hover {
+                background-color: #42230b;
+            }
+        }
+        
+        &.warning {
+            border-radius: 12px;
+            padding: 0.25em 2em;
+            background-color: #42230b;
+            color: #ffba1a;
+                &:hover {
+                    background-color: #8c6239;
+                }
+        }
+
+        &.success {
+            border-radius: 12px;
+            padding: 0.25em 2em;
+            background-color: #ffba1a;
+            color: #42230b;
+                &:hover {
+                    background-color: #bb8f14;
+                }
+        }
+        &.items { 
+            width: 30px;
+            border-radius: 7px;
+            padding: 0.25em;
+            background-color: #cdcdcd;
+            color: #4c4c4c;
+                &:hover {
+                    background-color: #4c4c4c;
+                    color: #cdcdcd;
+                }
+    
+        }
+        &.triangle-right {
+            background: transparent;
+            width: 5px;
+            border-radius: 7px;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 25px solid white;
+            opacity: 0.35;
+            border-bottom: 50px solid transparent;
+            margin-left: 1em;
+            &:hover {
+                border-left: 25px solid white;
+                opacity: 1;
+            }
+        }
+        &.triangle-left {
+            background: transparent;
+            width: 0;
+            border-radius: 7px;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-right: 25px solid white;
+            opacity: 0.35;
+            border-bottom: 50px solid transparent;
+            margin-right: 1em;
+            &:hover {
+                border-right: 25px solid white;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+input {
+    font-family: "Copperplate Gothic";  
+    padding: 0.25em;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 1 solid #707070;
+    text-decoration: none;
+    display: inline-block;
+    &::placeholder {
+        color: #a09f9f;
+        font-family: "Segoe UI";
+        font-style: italic;
+    }
+}

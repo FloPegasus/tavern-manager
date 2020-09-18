@@ -1,0 +1,109 @@
+.mail-form {
+    top: 15%;
+    left: 15.352%;
+    width: 65%;
+    height: 71vh;
+    border: 1 solid #707070;
+    border-radius: 40px;
+    background-color: #ffffffd4;
+    position: absolute;
+    text-align: center;
+    padding: 2em;
+
+    .tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .use-tool {
+            text-align: left;
+            button {
+                margin-right: 0.5em;
+            }
+        }
+        .search-tool {
+            text-align: right;
+            width: 50%;
+            display: flex;
+            button {
+                margin-left: 0.5em;
+            }
+            input {
+                width: 60%;
+            }
+        }
+    }
+
+    .mail-table {
+        margin-top: 2em;
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        
+        th, td {
+            padding: 0.25em;
+            &.select-mail {
+                width: 1%;
+            }
+            &.sender {
+                width: 20%;
+                padding: 0.25em 1em;
+            }
+            &.subject {
+                width: 59%;
+                padding: 0.25em 1em;
+            }
+            &.date {
+                width: 20%;
+                padding: 0.25em 1em;
+            }
+        }
+
+        th {
+            background-color: #cdcdcd;
+        }
+
+        td {
+            &.subject {
+                cursor: pointer;
+            }
+            background-color: white;
+        }
+        .paginator {
+            text-align: center;
+            padding-top: 0.5em;
+            button {
+                margin-top: 0.5;
+                margin-left: 0.25em;
+                &.arrow {
+                    background-color: transparent;
+                    border-color: transparent;
+                    padding: 0em;
+                    color: grey;
+                    &:hover {
+                        color: black;
+                    }
+                    &:disabled {
+                        color: transparent;
+                    }
+                }
+                &.page {
+                    border-radius: 7px;
+                    background-color: #8c6239;
+                    color: #ffba1a;
+                    &:hover {
+                        background-color: #42230b;
+                    }
+                    &:disabled {
+                        background-color: #42230b;
+                    }
+                }
+            }
+        }
+    }
+}

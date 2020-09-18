@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #707070;
+    padding-left: 1em;
+    padding-right: 1em;
+    h1 {
+        color: #ffba1a;
+        text-decoration-color: black;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .logo {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 1em;
+            height: 61px;
+            width: 64,5;
+        }
+    }
+    input {
+        margin-right: 1em;
+    }
+    .items {
+        margin-right: .75em;
+    }
+}

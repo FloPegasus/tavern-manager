@@ -1,0 +1,201 @@
+.top {
+    label {
+        &.tile-label {
+            padding-left: 4em;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    div {
+        .character-card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.75em;
+            .tile{
+                font-family: "Copperplate Gothic";
+                width: 100%;
+                height: 45vh;
+                border: 1 solid #707070;
+                border-radius: 40px;      
+                background-color: #ffffffD4;
+                padding-right: 2em;    
+                padding-left: 2em;
+                padding-bottom: 1em;
+                &.new{
+                    color: #cdcdcd;
+                    &:hover{
+                        color: #707070;
+                    }
+                }
+                &:hover{
+                    background-color: #ffffff80;
+                   
+                    input {
+                        &:disabled {
+                            background-color: #ffffffd4;
+                        }
+                    }
+                }
+                input {
+                    cursor: pointer;
+                    &:disabled {
+                        background-color: white;
+                        
+                    }
+                }
+                label {
+                    cursor: pointer;
+                }
+
+                .char {
+                    margin-top: 1.25em;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    .photo-circle {
+                        margin-right: 1em;
+                        width: 25%;
+                        height: 110px;
+                        width: 110px;
+                        color: #707070;
+                        border:2px dotted #707070;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        display: inline-block;
+                        text-align: center;
+                        align-items: center;
+                        i {
+                            margin-top: 3.5em
+                        }
+                    }
+                    .char-id {
+                        width: 75%;
+                        label {
+                            margin-left: 1em;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        input {
+                            width: 100%;
+                            margin-bottom: 0.5em;                    
+                        }
+                    }
+                    
+                }
+
+                .resume {
+                    margin-top: 0.5em;
+                    width: 97.5%;
+                    align-items: center;
+                    text-align: left;
+                    label {
+                        margin-left: 1em;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    input {
+                        width: 100%;
+                        margin-bottom: 0.5em;  
+                    }
+                }
+                
+                .carac {
+                    width: 100%;
+                    align-items: center;
+                    text-align: left;
+                    label {
+                        &.carac-label {
+                            margin-left: 1em;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .carac-props {
+                        width: 100%;
+                        display: inline-flex;
+                        text-align: left;
+                        .carac-stat {
+                            width: 38%;
+                            align-items: center;
+                            text-align: left;
+                            input {
+                                width: 2em;
+                                margin: 0.25em;
+                            }
+                            label {
+                                background-color: #cdcdcd;
+                                padding: 0.5em;
+                                border-radius: 12px;
+                                border: 1px solid black;
+                                width: 2em;
+                                margin: 0.25em;
+                                display: inline-block;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+                        }
+                        .carac-info {
+                            width: 62%;
+                            display: inline-block;
+                            text-align: left;
+                            .line {
+                                display: flex;
+                                justify-content: space-evenly;
+                                width: 100%;
+                                margin-bottom: 0.5em;
+                                .class {
+                                    width: 140%;
+                                    input {
+                                        width: 94%;
+                                    }
+                                }
+                                .level {
+                                    width: 38%;
+                                    input {
+                                        width: 75%;
+                                    }
+                                }
+                                .xp {
+                                    width: 50%;
+                                    input {
+                                        width: 90%;
+                                    }
+                                }
+                                .gold {
+                                    width: 50%;
+                                    input {
+                                        width: 90%;
+                                    }
+                                }
+                                input {
+                                    margin: 0.25em;
+                                }
+                                label {
+                                    font-weight: bold;
+                                    padding-left: 1em;
+                                }
+                            }
+                           
+                        }
+                       
+                    }
+                    
+
+                }
+
+                
+            }
+        }
+        
+    }
+}
+
+.fa-camera { line-height: inherit;}
+
+

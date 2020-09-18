@@ -1,0 +1,87 @@
+.bottom {
+    label {
+        &.tile-label {
+            padding-left: 4em;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    div {
+        .news-caroussel {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.75em;
+            .news-card{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .tile{
+                    font-family: "Copperplate Gothic";
+                    margin: 0 0.65em;
+                    width: 250px;
+                    height: 25vh;
+                    border: 1 solid #707070;
+                    border-radius: 40px;      
+                    background-color: #ffffffD4;
+                    padding-right: 1em;    
+                    padding-left: 1em;
+                    padding-bottom: 1em;
+                    &.new{
+                        color: #cdcdcd;
+                        &:hover{
+                            color: #707070;
+                        }
+                    }
+                    &:hover{
+                        background-color: #ffffff80;
+                       
+                        input {
+                            &:disabled {
+                                background-color: #ffffffd4;
+                            }
+                        }
+                        table {
+                            td {
+                                background-color: #ffffffd4
+                            }
+                        }
+                    }
+                    input {
+                        cursor: pointer;
+                        &:disabled {
+                            background-color: white;
+                        }
+                    }
+                    label {
+                        cursor: pointer;
+                    }
+    
+                    .news {
+                        margin-top: 1em;
+    
+                        width: 100%;
+                        text-align: center;
+                        label {
+                            width: 100%;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        &.body {
+                            border: 1 solid #707070;
+                            background-color: white;
+                            border-radius: 12px;
+                            height: 15vh;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.fa-camera { line-height: inherit;}
+
+

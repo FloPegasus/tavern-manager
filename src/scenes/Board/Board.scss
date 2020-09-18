@@ -1,0 +1,19 @@
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+    div {
+        width: 50%;
+    }
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+    div {
+        width: 100%;
+    }
+}
